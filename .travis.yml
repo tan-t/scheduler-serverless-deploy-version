@@ -1,8 +1,11 @@
-language: minimal
+language: node_js
 before_install:
   - 'npm i -g firebase-tools'
 install: ./predeploy.sh
+after_install: true
+before_script: true
 script: true
+after_script: true
 deploy:
   provider: firebase
   token:
