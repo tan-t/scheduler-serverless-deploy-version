@@ -1,4 +1,5 @@
-before_deploy: ./predeploy
+install: ./predeploy.sh
+script: true
 deploy:
   provider: firebase
   token:
