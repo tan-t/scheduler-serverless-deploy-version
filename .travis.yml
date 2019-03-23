@@ -1,4 +1,6 @@
 language: minimal
+before_install:
+  - 'npm i -g firebase-tools'
 install: ./predeploy.sh
 script: true
 deploy:
